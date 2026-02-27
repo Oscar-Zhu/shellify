@@ -60,7 +60,10 @@ body {
   background-size: 200% 200%;
   animation: heroGlow 18s ease-in-out infinite;
 }
-
+.hero-content {
+  position: relative;
+  z-index: 3;
+}
 .hero h1 {
   font-size: 48px;
   font-weight: 500;
@@ -133,4 +136,5 @@ footer {
     background-position: 0% 50%;
   }
 }
+
 
