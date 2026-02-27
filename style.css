@@ -45,7 +45,20 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: linear-gradient(to bottom, #000000, #111111);
+  position: relative;
+  background: radial-gradient(
+      circle at 20% 30%,
+      rgba(255, 255, 255, 0.06),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 80% 70%,
+      rgba(255, 255, 255, 0.04),
+      transparent 45%
+    ),
+    linear-gradient(to bottom, #000000, #0f0f0f);
+  background-size: 200% 200%;
+  animation: heroGlow 18s ease-in-out infinite;
 }
 
 .hero h1 {
@@ -108,3 +121,4 @@ footer {
   color: #666;
 
 }
+
