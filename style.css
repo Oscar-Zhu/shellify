@@ -85,11 +85,15 @@ body {
   padding: 140px 10%;
   max-width: 1200px;
   margin: auto;
+  position: relative;
+  z-index: 2;
 }
 
 .section h2 {
   font-size: 32px;
   margin-bottom: 30px;
+  position: relative;
+  z-index: 2;
 }
 
 .dark {
@@ -140,6 +144,21 @@ footer {
   }
 }
 
+body {
+  color: #d8d8d8;
+}
 
+/* ===== Global content clarity fix ===== */
 
+body {
+  color: #d8d8d8;
+}
 
+.section {
+  position: relative;
+  z-index: 2;
+}
+
+h1, h2, h3 {
+  color: #f2f2f2;
+}
