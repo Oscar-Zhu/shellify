@@ -342,23 +342,54 @@ footer{
 
 @media(max-width:768px){
 
+.hero{
+    min-height:70vh;
+    padding:100px 6% 60px;
+    text-align:center;
+}
+
+.hero-content{
+    max-width:100%;
+}
+
 .hero h1{
 
-    font-size:42px;
+    font-size:38px;
+
+    line-height:1.1;
+
+    margin-bottom:18px;
 }
 
 .hero p{
 
-    font-size:18px;
+    font-size:16px;
+
+    line-height:1.6;
+
+    margin-bottom:25px;
+}
+
+.hero-btn{
+
+    padding:14px 28px;
+
+    font-size:14px;
+}
+
+.navbar{
+
+    padding:16px 20px;
+}
+
+.logo{
+
+    font-size:22px;
 }
 
 .nav-links{
 
-    gap:15px;
+    display:none;
 }
 
-.nav-links a{
-
-    font-size:12px;
-}
 }
