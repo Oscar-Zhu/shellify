@@ -19,6 +19,66 @@ content="Premium 4x4 accessories, roller covers, roof racks, camping gear and of
 
 </head>
 
+  <script>
+
+setTimeout(function(){
+
+  if(!localStorage.getItem("popupShown")){
+
+    document.getElementById("discountPopup").style.display="flex";
+
+  }
+
+},3000);
+
+function closePopup(){
+
+  document.getElementById("discountPopup").style.display="none";
+
+  localStorage.setItem("popupShown","true");
+
+}
+
+let timeLeft=1800;
+
+const timer=setInterval(function(){
+
+  let minutes=Math.floor(timeLeft/60);
+
+  let seconds=timeLeft%60;
+
+  document.getElementById("countdown").innerHTML=
+
+    minutes.toString().padStart(2,'0')
+
+    + ":"
+
+    + seconds.toString().padStart(2,'0');
+
+  timeLeft--;
+
+  if(timeLeft<0){
+
+      clearInterval(timer);
+
+  }
+
+},1000);
+
+document
+.getElementById("discountForm")
+.addEventListener("submit",function(e){
+
+  e.preventDefault();
+
+  alert("Your 20% discount code has been reserved!");
+
+  closePopup();
+
+});
+
+</script>
+  
 <body>
 
 <!-- ================= NAVBAR ================= -->
